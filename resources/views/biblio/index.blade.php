@@ -11,13 +11,12 @@
                                     <div class="p-6 bg-white border-b border-gray-200">
 
                                         <div class="BarraPesquisa">
-                                            <form action="biblioteca/database/pesquisa" method="POST">
+                                            
                                                {{-- precisa do csrf pra funcionar --}}
-                                                @csrf
+                                                <input type="hidden" value="{{ csrf_token() }}" id="token">
                                                 <input type="search" name="pesquisa" id="search">
                                                 <button id="pesquisa">Pesquisar</button>
-                                            </form>
-
+                                            
                                         </div>
 
                                     </div>
