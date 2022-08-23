@@ -1,0 +1,40 @@
+
+.main{
+   height: 400px;
+}
+h1{
+    color: #1a202c;
+    font-family: sans-serif;
+
+}
+h2
+{
+    font-family: sans-serif;
+    color:#6b7280;
+}
+q{
+    position: absolute;
+    font-size: 20px;
+    bottom: 100px;
+    right: 100px;
+    margin: 25px;
+    color: #a0aec0;
+}
+#autor{
+    position: absolute;
+    font-size: 15px;
+    bottom: 80px;
+    right: 110px;
+    margin: 25px;
+
+}
+.grid{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.iten{
+    text-align: center;
+    border: #1a202c solid 1px;
+    margin: 5px;
+}
