@@ -1,3 +1,5 @@
+
+create database laravel;
 use laravel;
 drop table if exists livros;
 
