@@ -25,17 +25,20 @@ btnPesquisa.addEventListener("click", async () => {
         });
 
         const result = await resposta.json();
+        console.log(result);
+});
+//
 
-        const tr = document.createElement("")
-        tr.setAttribute('id', id)
-        
-        result.forEach( livro => {
-            
+//         const tr = document.createElement("")
+//         tr.setAttribute('id', id)
+
+//         result.forEach( livro => {
 
 
 
-        });
-})
+
+//         });
+// })
 
 
 //
@@ -46,9 +49,3 @@ btnPesquisa.addEventListener("click", async () => {
 // onload async() => {
 
 //     const grid = document.querySelector('.grid');
-
-
-
-
-
-// }
