@@ -33,3 +33,4 @@ Route::get('/biblioteca',[BibliotecaController::class,'index']);
 Route::get('/carrinho', [CarrinhoController::class,'index']);
 
 Route::post('/biblioteca/database/pesquisa',[DatabaseController::class,'pesquisa']);
+Route::post('/biblioteca/database/categoria',[DatabaseController::class,'categoria']);

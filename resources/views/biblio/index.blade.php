@@ -11,12 +11,17 @@
                                     <div class="p-6 bg-white border-b border-gray-200">
 
                                         <div class="BarraPesquisa">
-                                            
+                                                <select name="" id="selectCat">
+                                                    <option value="livro" selected>Livros</option>
+                                                    <option value="eBook">E-book</option>
+                                                    <option value="docHist">Documento históricos</option>
+                                                    {{-- <option value="livro">Livros</option> --}}
+                                                </select>
                                                {{-- precisa do csrf pra funcionar --}}
                                                 <input type="hidden" value="{{ csrf_token() }}" id="token">
                                                 <input type="search" name="pesquisa" id="search">
                                                 <button id="pesquisa">Pesquisar</button>
-                                            
+
                                         </div>
 
                                     </div>
@@ -24,14 +29,7 @@
                             </div>
                         </div>
                     <div class="grid">
-                        <div class="iten">1</div>
-                        <div class="iten">2</div>
-                        <div class="iten">3</div>
-                        <div class="iten">4</div>
-                        <div class="iten">5</div>
-                        <div class="iten">6</div>
-                        <div class="iten">7</div>
-                        <div class="iten">8</div>
+
 
                     </div>
 
