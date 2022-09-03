@@ -9,7 +9,12 @@ class DatabaseController extends Controller
     function pesquisa(){
         return view("php.pesquisa");
     }
+
     function livros(){
         return view("php.livros");
+    }
+    function categoria(){
+        return view("php.categoria");
+
     }
 }

@@ -14,10 +14,23 @@
 
                                         <div class="BarraPesquisa">
 
+
                                                {{-- precisa do csrf pra funcionar --}}
                                                 <input type="hidden" value="{{ csrf_token() }}" id="token">
                                                 <input type="search" name="pesquisa" id="search">
                                                 <button class="btn btn-secondary" id="pesquisa">Pesquisar</button>
+
+                                                <select name="" id="selectCat">
+                                                    <option value="livro" selected>Livros</option>
+                                                    <option value="eBook">E-book</option>
+                                                    <option value="docHist">Documento históricos</option>
+                                                    {{-- <option value="livro">Livros</option> --}}
+                                                </select>
+                                               {{-- precisa do csrf pra funcionar --}}
+                                                <input type="hidden" value="{{ csrf_token() }}" id="token">
+                                                <input type="search" name="pesquisa" id="search">
+                                                <button id="pesquisa">Pesquisar</button>
+
 
                                         </div>
 
@@ -26,7 +39,10 @@
                             </div>
                         </div>
 
+
                     <div id="grid" class="grid">
+
+                    <div class="grid">
 
 
 
