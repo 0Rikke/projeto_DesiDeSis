@@ -5,6 +5,34 @@ const btnPesquisa = document.getElementById("pesquisa");
 const token = document.getElementById("token").value;
 const grid = document.querySelector('.grid');
 
+onload = async() =>{
+
+    const respostaLivros = await fetch(`/biblioteca/database/livros`,{
+        headers: {
+            'X-CSRF-TOKEN': token
+        },
+
+    });
+
+    const livros = await respostaLivros.json();
+    // console.log(livros);
+
+    livros.forEach(livro => {
+        const grid = document.getElementById('grid');
+        const div = document.createElement('div');
+        const btn = document.create
+        const p = document.createElement('p');
+
+        p.innerHTML =   livro.nome;
+
+        div.setAttribute('class','iten');
+        div.append(p);
+        grid.append(div);
+    });
+
+};
+
+
 
 
 btnPesquisa.addEventListener("click", async () => {
@@ -25,7 +53,7 @@ btnPesquisa.addEventListener("click", async () => {
         });
 
         const result = await resposta.json();
-        console.log(result);
+        // console.log(result);
 });
 //
 
@@ -46,6 +74,3 @@ btnPesquisa.addEventListener("click", async () => {
 //
 
 
-// onload async() => {
-
-//     const grid = document.querySelector('.grid');

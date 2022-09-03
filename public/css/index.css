@@ -1,7 +1,5 @@
 
-.main{
-   height: 400px;
-}
+a{text-decoration: none;}
 h1{
     color: #1a202c;
     font-family: sans-serif;
@@ -21,7 +19,7 @@ q{
     color: #a0aec0;
 }
 #autor{
-   
+
     font-size: 15px;
     bottom: 80px;
     right: 110px;
@@ -31,10 +29,28 @@ q{
 .grid{
 
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    height: 500px;
+    grid-template-columns: 235px 235px 235px 235px 235px;
 }
 .iten{
     text-align: center;
     border: #1a202c solid 1px;
     margin: 5px;
+}
+.titulo-livros{
+    text-align: center;
+}
+.BarraPesquisa{
+    display: inline-block;
+    float: right;
+}
+.titulo{
+    display: inline-block;
+}
+#search
+{
+    height: 38px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
 }
