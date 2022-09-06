@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class DatabaseController extends Controller
 {
     function pesquisa(){
@@ -15,6 +16,10 @@ class DatabaseController extends Controller
     }
     function categoria(){
         return view("php.categoria");
-
     }
+    function pedido(){
+        return view('php.pedido');
+    }
+
+
 }

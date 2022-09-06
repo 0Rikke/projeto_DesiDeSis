@@ -16,8 +16,10 @@ try {
 
     foreach ($sth as $resposta)
         {
-        $respostas[] = [
+        $respostas[] =[
+            'id' => $resposta['id'],
             'nome' => $resposta['nome'],
+            'img' => $resposta['img']
 
         ];
     }

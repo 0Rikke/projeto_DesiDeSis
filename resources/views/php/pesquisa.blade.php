@@ -11,14 +11,16 @@ try {
     $db = new PDO("mysql:host={$_DATABASE['HOSTNAME']};dbname={$_DATABASE['DBNAME']}", $_DATABASE['USER'], $_DATABASE['PWD']);
     $respostas = [];
 
-        $sth = $db->query('SELECT nome FROM livros where nome LIKE "%'.$nome.'%"');
+        $sth = $db->query('SELECT * FROM livros where nome LIKE "%'.$nome.'%"');
 
         $rows = $sth->fetchAll();
 
     foreach ($rows as $resposta)
         {
         $respostas[] = [
-            'nome' => $resposta['nome'],
+            'id' => $resposta['id'],
+            'img' => $resposta['img'],
+            'nome' => $resposta['nome']
 
         ];
     }

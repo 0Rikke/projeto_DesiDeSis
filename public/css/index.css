@@ -1,8 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a:hover {
 
-a{text-decoration: none;}
+    text-decoration: none !important;
+}
+
+
 h1{
     color: #1a202c;
     font-family: sans-serif;
+    text-align: center;
 
 }
 h2
@@ -29,13 +38,17 @@ q{
 .grid{
 
     display: grid;
-    height: 500px;
-    grid-template-columns: 235px 235px 235px 235px 235px;
+
+    grid-template-columns: auto auto auto auto;
 }
 .iten{
-    text-align: center;
-    border: #1a202c solid 1px;
+    width: 250px;
+    border: #7777 solid 1px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.250) ;
     margin: 5px;
+    padding: 25px;
+
 }
 .titulo-livros{
     text-align: center;
@@ -47,10 +60,77 @@ q{
 .titulo{
     display: inline-block;
 }
+
 #search
 {
     height: 38px;
     width: 300px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.botao{
+
+    padding: 8px;
+    border: #6b7280 solid 1px;
+    border-radius: 4px;
+    transition: .3s;
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.botao:hover{
+    border: #1a202c solid 1px;
+    background-color: #a0aec0;
+    color: white;
+}
+.botaoP{
+
+    padding: 8px;
+    border: #6b7280 solid 1px;
+    border-radius: 4px;
+    transition: .3s;
+    width: 150px;
+
+
+
+}
+.botaoP:hover{
+    border: #1a202c solid 1px;
+    background-color: #a0aec0;
+    color: white;
+}
+p{
+    text-align: center;
+}
+.gridpesq{
+
+    display: grid;
+    padding: 50px;
+    grid-template-columns: auto auto auto auto;
+
+    border: #7777 solid 1px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.250) ;
+
+}
+
+.sucessMsg{
+    font-size: larger;
+    color: darkgreen;
+    margin: 0px;
+    border-radius: 3px;
+
+    background-color:palegreen;
+    padding: 30px;
+    position:fixed;
+    top:100px;
+    right: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.250) ;
+}
+.sucessMsg>img {
+    margin: 0px auto;
+
 }

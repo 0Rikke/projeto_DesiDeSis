@@ -16,7 +16,9 @@ try {
     foreach ($pesquisa as $livro)
         {
         $livros[] = [
+            'id' => $livro['id'],
             'nome' => $livro['nome'],
+            'img' => $livro['img']
 
         ];
     }
