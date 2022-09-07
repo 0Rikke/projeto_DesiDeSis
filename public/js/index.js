@@ -86,7 +86,7 @@ select.addEventListener('change', async ()=>{
         grid.innerHTML= '';
         const div = document.createElement('div');
         const p = document.createElement('p');
-
+        
         result.forEach(tipo => {
             var $msg = "";
         const idUser = document.getElementById('idUser').value
@@ -151,7 +151,7 @@ btnPesquisa.addEventListener("click", async () => {
 
         const result = await resposta.json();
         const divRes = document.getElementById('gridpesq')
-
+        divRes.innerHTML = "";
 
         result.forEach(pesq =>{
 
@@ -207,6 +207,7 @@ btnPesquisa.addEventListener("click", async () => {
 
 
         });
+
 
 
 

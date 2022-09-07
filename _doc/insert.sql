@@ -9,8 +9,11 @@ VALUES
 
 INSERT INTO `livros`(`nome`, `descricao`,`tipo`, `img`)
 VALUES
-('g','sim','eBook','exp1'),
-('h','nao','livro','exp2'),
-('i','talvez','docHist','exp3')
+('A','sim','eBook','exp1'),
+('B','nao','livro','exp2'),
+('C','talvez','docHist','exp3'),
+('TESTE1','sim','eBook','exp1'),
+('TESTE2','nao','livro','exp2'),
+('TESTE3','talvez','docHist','exp3')
 
 
